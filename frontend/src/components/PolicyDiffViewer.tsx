@@ -36,7 +36,7 @@ function formatPolicyProp(policy: unknown, fallback: string): string {
     } catch {
       // Handle escaped string scenarios like \" and \n
       try {
-        const unescaped = data.replace(/\\"/g, '"').replace(/\\n/g, '\n')
+        const unescaped = String(data).replace(/\\"/g, '"').replace(/\\n/g, '\n')
         data = JSON.parse(unescaped)
       } catch {
         break
@@ -139,7 +139,7 @@ export default function PolicyDiffViewer({
     [currentPolicy],
   )
   const leastJson = useMemo(
-    () => formatPolicyProp(leastPrivilegePolicy, '// ingest an event to generate the least-privilege policy'),
+    () => formatPolicyProp(leastPrivilegePolicy, '// no data yet'),
     [leastPrivilegePolicy],
   )
 
