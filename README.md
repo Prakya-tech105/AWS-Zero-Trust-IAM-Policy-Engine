@@ -48,7 +48,8 @@ flowchart TD
     node_remediation -->|Enforces Zero-Trust| node_iam
 
 ```
-✨ Key Features
+## ✨ Key Features
+
 Live Telemetry Stream: Ingests and displays real-time security events using Server-Sent Events (SSE).
 
 Side-by-Side Policy Diff Viewer: Powered by Monaco Editor with custom decorations highlighting hazardous wildcards (s3:*, *) vs. scannable least-privilege rules.
@@ -63,7 +64,8 @@ Simulation Pass Rate: Validates that candidate least-privilege policies maintain
 
 Offline & Connected Modes: Automatically falls back to robust mock payloads and telemetry when AWS credentials are absent, ensuring seamless local demonstrations.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
+
 Frontend
 Framework: React 18, Vite, TypeScript
 
@@ -78,7 +80,8 @@ AWS Integration: Boto3 (IAM, CloudTrail, EventBridge)
 
 Engine Modules: Custom Event Normalizer, Policy Simulator, and Least-Privilege Generator
 
-🚀 Getting Started
+## 🚀 Getting Started
+
 Prerequisites
 Node.js (v18+)
 
@@ -104,5 +107,6 @@ npm install
 npm run dev
 Open your browser and navigate to http://localhost:5173 (or the port specified by Vite).
 
-📄 License
+## 📄 License
+
 Distributed under the MIT License. See LICENSE for more information.
