@@ -47,7 +47,7 @@ flowchart TD
     node_policy_analysis -->|Validates| node_policy_simulator
     node_remediation -->|Enforces Zero-Trust| node_iam
 
-
+```
 ✨ Key Features
 Live Telemetry Stream: Ingests and displays real-time security events using Server-Sent Events (SSE).
 
